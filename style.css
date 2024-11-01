@@ -43,10 +43,8 @@ h1 {
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  width: 100px;
+  height: 100px;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -56,7 +54,10 @@ h1 {
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .read-the-docs {
@@ -93,4 +94,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#current-time {
+  font-size: 1.2em;
+  color: #333;
+}
+
+#toggle-text, #font-size-text, #color-text {
+  margin-top: 10px;
 }
